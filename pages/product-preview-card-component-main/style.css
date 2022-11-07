@@ -89,7 +89,6 @@ body {
 .price-box span:nth-child(2) {
   font-family: 'Montserrat', serif;
   font-size: 10px;
-  text-decoration: line-through;
   color: var(--neutralColor-grayishBlue);
 }
 /* BUTTON */

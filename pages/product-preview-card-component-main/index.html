@@ -21,7 +21,13 @@
     <main>
       <div class="card">
         <div class="card-image">
-          <img src="./images/image-product-desktop.jpg" alt="" />
+          <picture>
+            <source
+              media="(max-width: 992px)"
+              srcset="./images/image-product-mobile.jpg"
+            />
+            <img src="./images/image-product-desktop.jpg" alt="perfume" />
+          </picture>
         </div>
         <div class="card-content">
           <p class="category">perfume</p>
@@ -32,7 +38,7 @@
           </p>
           <div class="price-box">
             <span>$149.99</span>
-            <span>$169.99</span>
+            <span><del>$169.99</del></span>
           </div>
           <a>
             <img src="./images/icon-cart.svg" alt="" />
@@ -47,7 +53,8 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a target="_blank" href="https://github.com/TeixeiraCamila">Camila</a>.
+        >. Coded by
+        <a target="_blank" href="https://github.com/TeixeiraCamila">Camila</a>.
       </div>
     </footer>
   </body>
