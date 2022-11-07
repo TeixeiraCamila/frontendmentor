@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Barlow', sans-serif;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --light-gray: rgb(219, 229, 230);
+  --black: rgb(30, 30, 32);
+  --white: #f0f0f0;
+}
+body {
+  background-color: var(--light-gray);
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+header {
+  border: 1px solid var(--white);
+}
+header div {
+  border-left: 1px solid var(--white);
+  border-right: 1px solid var(--white);
+  height: 100%;
+  width: fit-content;
+  padding: 1.25rem;
+}
+header h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+main {
+  padding: 2rem 0;
+}
+
+.container-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-list .card {
+  margin: calc(1.25rem);
+  width: calc(100% - 2.5rem);
+  border-radius: 10px;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.container-list .card .card-preview img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  backface-visibility: hidden;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease 0s;
+  width: 100%;
+}
+.container-list .card .card-preview:hover img {
+  transform: scale(1.05);
+}
+.container-list .card .card-content {
+  padding: 1rem;
+}
+.container-list .card .card-content .card-title h2 {
+  font-weight: 400;
+}
+.container-list .card .card-content ul {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  font-weight: 700;
+}
+.container-list .card .card-content ul li:not(:nth-child(1)) {
+  padding-left: 1rem;
+}
+.container-list .card .card-content ul li.html {
+  color: rebeccapurple;
+}
+.container-list .card .card-content ul li.css {
+  color: darkolivegreen;
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 992px) {
+  .container-list .card {
+    margin: calc(1.25rem);
+    width: calc(33.3333% - 2.5rem);
+  }
+}
