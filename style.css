@@ -87,12 +87,14 @@ main {
   padding-left: 1rem;
 }
 .container-list .card .card-content ul li.html {
-  color: rebeccapurple;
+  color: rgb(106, 190, 205);
 }
 .container-list .card .card-content ul li.css {
-  color: darkolivegreen;
+  color: rgb(62, 84, 163);
 }
-
+.container-list .card .card-content ul li.js {
+  color: rgb(207, 99, 144);
+}
 /* DESKTOP */
 @media only screen and (min-width: 992px) {
   .container-list .card {
